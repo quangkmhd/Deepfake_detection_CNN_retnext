@@ -5,35 +5,53 @@ This project aims to detect deepfake videos by leveraging deep learning techniqu
 
 ## Introduction
 
-With the advancement of deep learning algorithms, creating realistic human-synthesized videos, known as deepfakes, has become increasingly accessible. These videos can be misused for malicious purposes, including disinformation campaigns and personal defamation. This project presents a deep learning-based method to distinguish between authentic and AI-generated fraudulent videos, focusing on detecting replacement and reenactment deepfakes. The core of our system utilizes a ResNeXt Convolutional Neural Network to extract frame-level features, which are then processed to identify inconsistencies indicative of deepfakes.
+This project aims to detect deepfake videos by extracting faces from real and fake videos, preprocessing them, and training a deep learning model based on ResNet50 to distinguish between real and fake faces. The dataset includes videos from Celeb-DF v1 and v2 datasets. The workflow involves:
 
-## System Architecture
+Extracting frames from videos
 
-The system architecture comprises the following components:
+Detecting faces and contextual regions
 
-1. **Frame Extraction**: Videos are decomposed into individual frames to analyze temporal features.
-2. **Feature Extraction**: Each frame is processed using a pre-trained ResNeXt CNN to obtain feature vectors.
-3. **Classification**: The extracted features are fed into a classifier to determine the authenticity of the video.
+Preprocessing and splitting data
+
+Training a CNN classifier
+
+## ✨ Features
+Frame extraction from video at custom intervals
+
+Face detection using Haar cascades
+
+Contextual region extraction
+
+Balanced dataset splitting
+
+Model training using pretrained ResNet50
+
+Real-time training accuracy and loss reporting
+
+
 
 ## Requirements
 
 To run this project, ensure you have the following software and libraries installed:
 
-- Python 3.7 or higher
-- Jupyter Notebook
-- OpenCV
-- PyTorch
+- Python 
+
 - NumPy
-- Matplotlib
+
+- Pandas
+
+- OpenCV
+
+- PyTorch
+
+- Torchvision
 
 
-## Usage
+##👨‍💻 Contributors
+Nguyễn Hữu Quang – Initial Work
 
-1. **Prepare the Dataset**:
-2. **Extract Frames from Videos**
-3. **Train the Model**
-4. **Evaluate the Model**
-5. **Detect Deepfakes in New Videos**
+
+
 
 ## Dataset
 
